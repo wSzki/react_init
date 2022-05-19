@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as contentful from 'contentful'
-import App from './App'
+import App from 'pages/App'
 
 const client = contentful.createClient ({
 	space: process.env.REACT_APP_SPACE_ID,

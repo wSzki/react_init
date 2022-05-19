@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {BrowserRouter} from 'react-router-dom'
-import DBLoader from './DBLoader';
+import DBLoader from 'components/DBLoader';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
