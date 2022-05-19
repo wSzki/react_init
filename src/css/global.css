@@ -1,4 +1,8 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* GLOBAL --------------------------------*/
 
 *    {padding:         0px;  margin: 0px ;}

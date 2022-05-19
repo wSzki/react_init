@@ -1,12 +1,11 @@
 
-import './global.css'
+import 'css/global.css'
 
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion'
 import { useLocation, Routes, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
-import Home   from './pages/Home/Home'
+import Home   from './Home/Home'
 
 const Container = (p) => {
 	return (
@@ -32,10 +31,11 @@ const App = (p) => {
 	const db       = p.db;
 	const location = useLocation();
 
+	const [id,      setId]      = useState(-1);
+	const [display, setDisplay] = useState("hidden");
 
 	return    (
 		<>
-			<Helmet/>
 			<Container>
 				<AnimatePresence exitBeforeEnter>
 					<Routes location={location} key={location.pathname}>

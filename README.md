@@ -20,7 +20,9 @@ npx tailwindcss init -p
 ## Notes
 
 For localhost access to contentful, define in
-`.env.development`
+```
+.env.development
 REACT_APP_SPACE_ID
 REACT_APP_ACCESS_TOKEN
+```
 
